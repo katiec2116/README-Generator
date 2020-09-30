@@ -30,18 +30,21 @@ inquirer.prompt([
         name: "license",
         choices: ['MIT',
             "APACHE",
-            "GPL V2",
-            "other one"]
+            "GNU GPL V3",
+            "Eclipse Public License 1.0"]
+
     },
     {
         type: "input",
         message: "What command should be run to install dependencies?",
         name: "install",
+        default: "npm i",
     },
     {
         type: "input",
         message: "What command should be run to run tests?",
         name: "tests",
+        default: "test",
     },
     {
         type: "input",
@@ -58,7 +61,7 @@ inquirer.prompt([
 .then(function (data) {
     // create a legit filename
     var filename = "README-2.md"; 
-    
+
     fs.writeFile(filename, generateMarkdown(data), function(err){
         if (err) {
             return console.log(err)
