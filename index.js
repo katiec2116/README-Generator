@@ -55,3 +55,14 @@ inquirer.prompt([
     }
 ])
 
+.then(function (data) {
+    // create a legit filename
+    var filename = "README-2.md"; 
+    
+    fs.writeFile(filename, generateMarkdown(data), function(err){
+        if (err) {
+            return console.log(err)
+        }
+        console.log("Success!")
+    })
+});
