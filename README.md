@@ -31,7 +31,7 @@ To install use the following command
 ## Usage
 
 Use `node index.js` to start running the file. 
-After answerign all the questions the markdown file will be created with a title  **README-2.md**
+After answering all the questions, the markdown file will be created with a title  **README-2.md**
 
 
 
