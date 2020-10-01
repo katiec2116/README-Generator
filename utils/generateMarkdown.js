@@ -51,7 +51,7 @@ ${data.contribute}
 
 ## Tests
 
-To run test use the following command 
+To run tests use the following command 
 
 > ${data.test}
 
