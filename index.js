@@ -43,7 +43,7 @@ inquirer.prompt([
     {
         type: "input",
         message: "What command should be run to run tests?",
-        name: "tests",
+        name: "test",
         default: "test",
     },
     {
